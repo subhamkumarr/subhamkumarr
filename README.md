@@ -1,16 +1,16 @@
-### Hi there 👋
+<h1 align="center">Hi 👋, I'm Subham Kumar</h1>
+<h3 align="center">A budding Web Developer</h3>
+<h3 align="center">I'm a 3rd year student at <a href="https://www.iitism.ac.in/">IIT Dhanbad</a> </h3>
 
-<!--
-**subhamkumarr/subhamkumarr** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+- 📫 How to reach me **subham48520kumar@gmail.com**
 
-Here are some ideas to get you started:
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/subham-kumar-46821818b/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="subham-kumar-46821818b/" height="30" width="40" /></a>
+<a href="https://instagram.com/subham._.16" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="subham._.16" height="30" width="40" /></a>
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=subhamkumarr&show_icons=true&locale=en" alt="subhamkumarr" /></p>
+
+<p><img src="https://github-readme-stats.vercel.app/api/top-langs?username=subhamkumarr&show_icons=true&locale=en&layout=compact" alt="subhamkumarr" /></p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=subhamkumarr&label=Profile%20views&color=0e75b6&style=flat" alt="subhamkumarr" /> </p>
