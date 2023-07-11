@@ -10,7 +10,6 @@
 <a href="https://instagram.com/subham._.16" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="subham._.16" height="30" width="40" /></a>
 </p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=subhamkumarr&show_icons=true&locale=en" alt="subhamkumarr" /></p>
-
-<p><img src="https://github-readme-stats.vercel.app/api/top-langs?username=subhamkumarr&show_icons=true&locale=en&layout=compact" alt="subhamkumarr" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=subhamkumarr&show_icons=true&locale=en&theme=radical" alt="subhamkumarr" /></p>
+<p><img src="https://github-readme-stats.vercel.app/api/top-langs?username=subhamkumarr&show_icons=true&locale=en&layout=compact&theme=radical" alt="subhamkumarr" /></p>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=subhamkumarr&label=Profile%20views&color=0e75b6&style=flat" alt="subhamkumarr" /> </p>
