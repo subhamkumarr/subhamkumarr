@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Subham Kumar</h1>
 <h3 align="center">A budding Web Developer</h3>
-<h3 align="center">I'm a 3rd year student at<a href="https://www.iitism.ac.in/"> IIT Dhanbad</a> </h3>
+<h3 align="center">I'm a 3rd year student at <a href="https://www.iitism.ac.in/">IIT Dhanbad</a> </h3>
 
 - 📫 How to reach me **subham48520kumar@gmail.com**
 
