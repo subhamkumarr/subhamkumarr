@@ -19,7 +19,7 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=subhamkumarr&label=Profile%20views&color=0e75b6&style=flat" alt="subhamkumarr" /> </p>
 
 
-## <p align="center"> 💚 Thank you awesome sponsors 💚 </p>
+## <p align="center">  Thank you awesome sponsors 💚 </p>
 
 <p>Thank you to the folks who <a href="https://github.com/sponsors/subhamkumarr">sponsor</a> my work:</p>
 
