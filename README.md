@@ -27,3 +27,4 @@
 
 <a href="https://github.com/AnandChowdhary"><img title="Anand Chowdhary" src="https://github.com/AnandChowdhary.png" width="32"></a>
 <a href="https://github.com/vaibhawvipul"><img title="Vipul Vaibhaw" src="https://github.com/vaibhawvipul.png" width="32"></a>
+<a href="https://github.com/itsharshag"><img title="Harsh Agrawal" src="https://github.com/itsharshag.png" width="32"></a>
