@@ -21,7 +21,7 @@
 
 ## <p align="center">  Thank you awesome sponsors 💚 </p>
 
-<p>Thank you to the folks who <a href="https://github.com/sponsors/subhamkumarr">sponsor</a> my work:</p>
+<p>Thank you to the folks for <a href="https://github.com/sponsors/subhamkumarr">sponsoring</a> my work:</p>
 
 
 
