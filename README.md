@@ -2,7 +2,7 @@
 <h3 align="center">A budding Web Developer</h3>
 <h3 align="center">I'm a 3rd year student at <a href="https://www.iitism.ac.in/">IIT Dhanbad</a> </h3>
 
-- 📫 How to reach me **subham48520kumar@gmail.com**
+- 📫 How to reach me **kumarsubham75861@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
