@@ -4,17 +4,18 @@
 
 ---
 
-- 📫 How to reach me: **kumarsubham75861@gmail.com**
+### 📫 How to reach me:
+**kumarsubham75861@gmail.com**
 
 ---
 
-<h3 align="left">Connect with me:</h3>
+### Connect with me:
 <p align="left">
   <a href="https://linkedin.com/in/subham-kumar-46821818b" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="30" width="40" />
+    <img src="https://skillicons.dev/icons?i=linkedin" width="40" />
   </a>
   <a href="https://twitter.com/subham16kumar" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" height="30" width="40" />
+    <img src="https://skillicons.dev/icons?i=twitter" width="40" />
   </a>
 </p>
 
@@ -25,7 +26,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=subhamkumarr&show_icons=true&layout=compact&theme=radical" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=subhamkumarr&layout=compact&theme=radical" alt="Top Languages" />
 </p>
 
 <p align="center">
@@ -33,5 +34,5 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=subhamkumarr&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=subhamkumarr&label=Profile%20views&color=0e75b6&style=flat" />
 </p>
