@@ -1,7 +1,7 @@
 <table>
 <tr>
 <td width="50%" valign="top">
-<h1 align="left">Hi, I'm Subham Kumar <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"></h1>
+<h1 align="left">Hi, I am Subham Kumar <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"></h1>
 <h4 align="left">I'm a Final-year Integrated Degree (B.Tech + M.Tech) student in Mathematics & Computer Science at IIT Dhanbad and a passionate Full-Stack Software Developer.</h4>
 <h4 align="left">I enjoy building scalable web applications, solving complex problems, and contributing to impactful open-source projects.</h4>
 
