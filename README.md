@@ -1,6 +1,12 @@
+<a href="https://github.com/subhamkumarr">
+  <img align="right" src="./my-avatar.gif" width="180" alt="Animated Avatar" />
+</a>
+
 Hi, I'm **Subham Kumar**, a **Final-year Integrated Degree (B.Tech + M.Tech) student in Mathematics & Computer Science at IIT Dhanbad** and a passionate **Full-Stack Software Developer**.
 
 I enjoy building scalable web applications, solving complex problems, and contributing to impactful open-source projects.
+
+<br clear="right"/>
 
 ---
 <p align="center">

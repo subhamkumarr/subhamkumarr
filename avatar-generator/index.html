@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<body
+    style="background-color: #1a1a1a; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; overflow: hidden;">
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Configuration
+        const HAIR_COLOR = '#F4D03F'; // Golden
+        const SKIN_COLOR = '#FAD7A0';
+        const GI_COLOR = '#F39C12'; // Orange Gi
+        const AURA_COLORS = ['#F1C40F', '#F39C12', '#E74C3C', '#FFFFFF'];
+
+        let frame = 0;
+        const particles = [];
+        const lightning = [];
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+
+            reset() {
+                this.x = 250 + (Math.random() - 0.5) * 150;
+                this.y = 400;
+                this.vx = (Math.random() - 0.5) * 2;
+                this.vy = -Math.random() * 5 - 2;
+                this.size = Math.random() * 20 + 5;
+                this.life = 1;
+                this.decay = Math.random() * 0.03 + 0.01;
+                this.color = AURA_COLORS[Math.floor(Math.random() * AURA_COLORS.length)];
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                this.life -= this.decay;
+                this.size *= 0.95;
+                if (this.life <= 0 || this.size < 0.5) this.reset();
+            }
+
+            draw() {
+                ctx.globalAlpha = this.life;
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.globalAlpha = 1;
+            }
+        }
+
+        // Initialize aura particles
+        for (let i = 0; i < 100; i++) {
+            particles.push(new Particle());
+            // pre-warm
+            particles[i].y = 400 - Math.random() * 200;
+        }
+
+        function drawLightning() {
+            if (Math.random() > 0.95) {
+                lightning.push({
+                    timer: 5,
+                    points: []
+                });
+                let lx = 250 + (Math.random() - 0.5) * 200;
+                let ly = 450;
+                let moves = [];
+                for (let i = 0; i < 10; i++) {
+                    lx += (Math.random() - 0.5) * 60;
+                    ly -= Math.random() * 50;
+                    moves.push({ x: lx, y: ly });
+                }
+                lightning[lightning.length - 1].points = moves;
+            }
+
+            ctx.strokeStyle = '#66FFFF'; // Blue electricity
+            ctx.lineWidth = 3;
+            ctx.shadowBlur = 15;
+            ctx.shadowColor = '#66FFFF';
+
+            for (let i = lightning.length - 1; i >= 0; i--) {
+                const bolt = lightning[i];
+                ctx.beginPath();
+                ctx.moveTo(250 + (Math.random() - 0.5) * 100, 400); // Start near base
+
+                let cx = 250;
+                let cy = 300; // rough center
+
+                bolt.points.forEach(p => {
+                    ctx.lineTo(p.x, p.y);
+                });
+
+                ctx.stroke();
+                bolt.timer--;
+                if (bolt.timer <= 0) lightning.splice(i, 1);
+            }
+            ctx.shadowBlur = 0;
+        }
+
+        function drawCharacter() {
+            ctx.save();
+            ctx.translate(250, 280); // Center of character
+
+            // --- HAIR (Super Saiyan Spikes) ---
+            ctx.fillStyle = HAIR_COLOR;
+            ctx.shadowBlur = 20;
+            ctx.shadowColor = '#F1C40F';
+
+            ctx.beginPath();
+            // Complex spike drawing
+            const spikes = [
+                [-60, 20], [-90, -40], [-50, -30], [-60, -90],
+                [0, -40], [40, -110], [50, -40], [90, -60],
+                [70, 0], [90, 30], [50, 20]
+            ];
+
+            ctx.moveTo(-40, 50); // Left ear area
+            for (let p of spikes) {
+                ctx.lineTo(p[0], p[1]);
+            }
+            ctx.lineTo(40, 50); // Right ear
+            ctx.closePath();
+            ctx.fill();
+
+            // --- HEAD ---
+            ctx.fillStyle = SKIN_COLOR;
+            ctx.shadowBlur = 0;
+            ctx.beginPath();
+            ctx.ellipse(0, 30, 45, 50, 0, 0, Math.PI * 2);
+            ctx.fill();
+
+            // --- FACE ---
+            // Eyebrows
+            ctx.fillStyle = HAIR_COLOR; // Golden eyebrows
+            ctx.beginPath();
+            ctx.moveTo(-35, 10); ctx.lineTo(-10, 20); ctx.lineTo(-35, 18); ctx.fill();
+            ctx.beginPath();
+            ctx.moveTo(35, 10); ctx.lineTo(10, 20); ctx.lineTo(35, 18); ctx.fill();
+
+            // Eyes (Green/Blue SSJ eyes)
+            ctx.fillStyle = "#00FFFF";
+            ctx.beginPath();
+            ctx.moveTo(-30, 25); ctx.lineTo(-10, 25); ctx.lineTo(-10, 32); ctx.lineTo(-25, 32); ctx.fill();
+            ctx.beginPath();
+            ctx.moveTo(30, 25); ctx.lineTo(10, 25); ctx.lineTo(10, 32); ctx.lineTo(25, 32); ctx.fill();
+
+            // Outline eyes
+            ctx.strokeStyle = "black";
+            ctx.lineWidth = 1;
+            ctx.strokeRect(-30, 25, 20, 7);
+            ctx.strokeRect(10, 25, 20, 7);
+
+            // Mouth
+            ctx.beginPath();
+            ctx.strokeStyle = '#C0392B';
+            ctx.lineWidth = 2;
+            ctx.moveTo(-10, 55);
+            ctx.lineTo(10, 55); // Serious mouth
+            ctx.stroke();
+
+            // --- GI (Body) ---
+            ctx.translate(0, 80);
+            ctx.fillStyle = GI_COLOR;
+            ctx.beginPath();
+            ctx.moveTo(-40, 0);
+            ctx.lineTo(40, 0);
+            ctx.lineTo(50, 100);
+            ctx.lineTo(-50, 100);
+            ctx.fill();
+
+            // Blue shirt undershirt
+            ctx.fillStyle = "#2980B9";
+            ctx.beginPath();
+            ctx.moveTo(-20, 0);
+            ctx.lineTo(0, 20);
+            ctx.lineTo(20, 0);
+            ctx.fill();
+
+            ctx.restore();
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw Aura (Back)
+            ctx.globalCompositeOperation = 'lighter';
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            ctx.globalCompositeOperation = 'source-over';
+
+            drawCharacter();
+            drawLightning();
+
+            // Shake effect for power
+            if (frame % 2 === 0) {
+                // gentle screen shake logic could go here, but kept static for clarity
+            }
+
+            frame++;
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+</body>
+
+</html>
