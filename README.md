@@ -2,8 +2,9 @@
 <tr>
 <td width="50%" valign="top">
 <h1 align="left">Hi, I am Subham Kumar <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"></h1>
-<h4 align="left">I'm a Super-Final-year Integrated Degree (B.Tech + M.Tech) student in Mathematics & Computer Science at IIT Dhanbad and a passionate Full-Stack Web3 Software Developer.</h4>
-<h4 align="left">I enjoy building scalable web applications, solving complex problems, and contributing to impactful open-source projects.</h4>
+<h4 align="left">I'm a Software Engineer and open-source contributor, and Integrated (B.Tech + M.Tech) graduate from IIT Dhanbad, passionate about building scalable full-stack and Web3 applications.
+</h4>
+<h4 align="left">I enjoy solving complex problems, shipping production-grade systems, and contributing to impactful open-source projects.</h4>
 
 <hr>
 
